@@ -7,6 +7,7 @@ import Dashboard from "./layout/Dashboard.jsx";
 import AddProduct from "./pages/AddProduct.jsx";
 import DashboardHome from "./pages/DashboardHome.jsx";
 import AllProducts from "./pages/AllProducts.jsx";
+import ProductDetails from "./pages/productDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/admin/all-products",
         element: <AllProducts />,
+      },
+      {
+        path: "/admin/product-details",
+        element: <ProductDetails />,
       },
     ],
   },

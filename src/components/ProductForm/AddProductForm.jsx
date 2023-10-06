@@ -31,6 +31,28 @@ const AddProductForm = () => {
       <div className="w-full flex gap-10 mb-4">
         <div className="w-1/2">
           <label className="font-medium text-gray-700" htmlFor="title">
+            Regular Price
+          </label>
+          <input
+            className="w-full border border-gray-300 text-gray-700 px-2 py-1 mt-2 rounded focus:outline-purple-500"
+            type="text"
+            placeholder="Enter the price of the product"
+          />
+        </div>
+        <div className="w-1/2">
+          <label className="font-medium text-gray-700" htmlFor="title">
+            Discount Price
+          </label>
+          <input
+            className="w-full border border-gray-300 text-gray-700 px-2 py-1 mt-2 rounded focus:outline-purple-500"
+            type="text"
+            placeholder="Enter the special price of the product"
+          />
+        </div>
+      </div>
+      <div className="w-full flex gap-10 mb-4">
+        <div className="w-1/2">
+          <label className="font-medium text-gray-700" htmlFor="title">
             Quantity
           </label>
           <input
@@ -41,24 +63,14 @@ const AddProductForm = () => {
         </div>
         <div className="w-1/2">
           <label className="font-medium text-gray-700" htmlFor="title">
-            Price
+            Product Image
           </label>
           <input
             className="w-full border border-gray-300 text-gray-700 px-2 py-1 mt-2 rounded focus:outline-purple-500"
             type="text"
-            placeholder="Enter the price of the product"
+            placeholder="Enter a picture url of the product"
           />
         </div>
-      </div>
-      <div className="mb-4">
-        <label className="font-medium text-gray-700" htmlFor="title">
-          Product Image
-        </label>
-        <input
-          className="w-full border border-gray-300 text-gray-700 px-2 py-1 mt-2 rounded focus:outline-purple-500"
-          type="text"
-          placeholder="Enter a picture url of the product"
-        />
       </div>
       <div className="mb-4">
         <label className="font-medium text-gray-700" htmlFor="title">

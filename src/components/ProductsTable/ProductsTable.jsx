@@ -1,6 +1,7 @@
 import { BiSolidEdit } from "react-icons/bi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaRegEye } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ProductsTable = () => {
   return (
@@ -50,7 +51,10 @@ const ProductsTable = () => {
           </td>
           <td className="text-gray-700 border border-gray-300 px-2">
             <div className="flex justify-around">
-              <FaRegEye className="w-5 h-5 duration-200 text-green-600 hover:text-green-700 cursor-pointer" />
+              <Link to="/admin/product-details">
+                <FaRegEye className="w-5 h-5 duration-200 text-green-600 hover:text-green-700 cursor-pointer" />
+              </Link>
+
               <BiSolidEdit className="w-5 h-5 duration-200 text-purple-600 hover:text-purple-700 cursor-pointer" />
               <RiDeleteBin6Line className="w-5 h-5 duration-200 text-red-500 hover:text-red-600 cursor-pointer" />
             </div>
