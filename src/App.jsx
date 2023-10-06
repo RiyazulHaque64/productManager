@@ -1,9 +1,9 @@
-import Dashboard from "./layout/Dashboard";
+import Client from "./layout/Client";
 
 function App() {
   return (
     <>
-      <Dashboard />
+      <Client />
     </>
   );
 }

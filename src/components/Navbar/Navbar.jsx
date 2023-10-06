@@ -1,35 +1,45 @@
 import { BsFillBagPlusFill, BsBagCheckFill } from "react-icons/bs";
-import { BiSolidCalendarEdit } from "react-icons/bi";
 import { ImHome } from "react-icons/im";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav>
       <ul className="space-y-2">
         <li>
-          <Link className="flex items-center gap-3 text-white px-5 py-1 rounded cursor-pointer duration-200 hover:bg-white hover:text-purple-600">
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "flex items-center gap-3 px-5 py-1 rounded cursor-pointer duration-200 bg-white text-purple-600"
+                : "flex items-center gap-3 text-white px-5 py-1 rounded cursor-pointer duration-200 hover:bg-white hover:text-purple-600"
+            }
+            to="/admin/home"
+          >
             <ImHome />
             <span>Home</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="flex items-center gap-3 text-white px-5 py-1 rounded cursor-pointer duration-200 hover:bg-white hover:text-purple-600">
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "flex items-center gap-3 px-5 py-1 rounded cursor-pointer duration-200 bg-white text-purple-600"
+                : "flex items-center gap-3 text-white px-5 py-1 rounded cursor-pointer duration-200 hover:bg-white hover:text-purple-600"
+            }
+            to="/admin/add-product"
+          >
             <BsFillBagPlusFill />
             <span>Add Product</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="flex items-center gap-3 text-white px-5 py-1 rounded cursor-pointer duration-200 hover:bg-white hover:text-purple-600">
+          <NavLink
+            className="flex items-center gap-3 text-white px-5 py-1 rounded cursor-pointer duration-200 hover:bg-white hover:text-purple-600"
+            to="/admin/all-products"
+          >
             <BsBagCheckFill />
             <span>All Product</span>
-          </Link>
-        </li>
-        <li>
-          <Link className="flex items-center gap-3 text-white px-5 py-1 rounded cursor-pointer duration-200 hover:bg-white hover:text-purple-600">
-            <BiSolidCalendarEdit />
-            <span>Edit Product</span>
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
